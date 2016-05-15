@@ -1,0 +1,42 @@
+{
+  "name": "tvf-react",
+  "version": "1.0.0",
+  "description": "React front-end for TV Football",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --profile --colors",
+    "dev": "webpack-dev-server --progress --colors --inline --hot --host 0.0.0.0"
+  },
+  "author": "zidhuss <Hussein Mohammed>",
+  "license": "ISC",
+  "dependencies": {
+    "material-ui": "^0.15.0",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.0",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux": "^3.5.2",
+    "reset-css": "^2.0.2011012603"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.8.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint-plugin-react": "^5.1.1",
+    "html-webpack-plugin": "^2.17.0",
+    "image-webpack-loader": "^1.8.0",
+    "postcss-import": "^8.1.2",
+    "postcss-loader": "^0.9.1",
+    "precss": "^1.4.0",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0"
+  }
+}
