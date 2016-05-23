@@ -1,0 +1,1110 @@
+{
+  "data": [
+    {
+      "date": "2016-05-20",
+      "matches": [
+        {
+          "away_team": {
+            "id": 81,
+            "name": "Czech Republic U20"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-20",
+          "home_team": {
+            "id": 78,
+            "name": "Mexico U20"
+          },
+          "id": 81,
+          "time": "16:00:00"
+        },
+        {
+          "away_team": {
+            "id": 79,
+            "name": "France U20"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-20",
+          "home_team": {
+            "id": 77,
+            "name": "Bulgaria U20"
+          },
+          "id": 82,
+          "time": "18:30:00"
+        },
+        {
+          "away_team": {
+            "id": 43,
+            "name": "Bradford City"
+          },
+          "channels": [
+            {
+              "id": 11,
+              "name": "Sky Sports 1"
+            },
+            {
+              "id": 20,
+              "name": "Sky Sports 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 9,
+            "name": "League One\u00a0Play-Off Semi-Final 2nd Leg"
+          },
+          "date": "2016-05-20",
+          "home_team": {
+            "id": 42,
+            "name": "Millwall"
+          },
+          "id": 48,
+          "time": "19:45:00"
+        }
+      ]
+    },
+    {
+      "date": "2016-05-21",
+      "matches": [
+        {
+          "away_team": {
+            "id": 45,
+            "name": "Hibernian"
+          },
+          "channels": [
+            {
+              "id": 11,
+              "name": "Sky Sports 1"
+            },
+            {
+              "id": 18,
+              "name": "BBC One Scotland"
+            },
+            {
+              "id": 19,
+              "name": "BBC One Scotland HD"
+            },
+            {
+              "id": 20,
+              "name": "Sky Sports 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 10,
+            "name": "Scottish FA Cup\u00a0Final"
+          },
+          "date": "2016-05-21",
+          "home_team": {
+            "id": 44,
+            "name": "Rangers"
+          },
+          "id": 50,
+          "time": "15:00:00"
+        },
+        {
+          "away_team": {
+            "id": 73,
+            "name": "Paraguay U20"
+          },
+          "channels": [
+            {
+              "id": 9,
+              "name": "BT Sport Europe"
+            },
+            {
+              "id": 27,
+              "name": "BT Sport Europe HD"
+            },
+            {
+              "id": 28,
+              "name": "BT Sport Extra 1"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-21",
+          "home_team": {
+            "id": 19,
+            "name": "Japan U20"
+          },
+          "id": 21,
+          "time": "15:15:00"
+        },
+        {
+          "away_team": {
+            "id": 135,
+            "name": "Spain U17"
+          },
+          "channels": [
+            {
+              "id": 37,
+              "name": "British Eurosport 2"
+            },
+            {
+              "id": 38,
+              "name": "British Eurosport 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 37,
+            "name": "UEFA Under-17 Championship\u00a0Final"
+          },
+          "date": "2016-05-21",
+          "home_team": {
+            "id": 134,
+            "name": "Portugal U17"
+          },
+          "id": 143,
+          "time": "17:00:00"
+        },
+        {
+          "away_team": {
+            "id": 49,
+            "name": "Man Utd"
+          },
+          "channels": [
+            {
+              "id": 2,
+              "name": "BBC One"
+            },
+            {
+              "id": 7,
+              "name": "BT Sport 2"
+            },
+            {
+              "id": 26,
+              "name": "BT Sport Ultra HD"
+            },
+            {
+              "id": 30,
+              "name": "BT Sport 2 HD"
+            },
+            {
+              "id": 32,
+              "name": "BBC One HD"
+            }
+          ],
+          "competition": {
+            "id": 30,
+            "name": "FA Cup\u00a0Final"
+          },
+          "date": "2016-05-21",
+          "home_team": {
+            "id": 98,
+            "name": "Crystal Palace"
+          },
+          "id": 110,
+          "time": "17:30:00"
+        },
+        {
+          "away_team": {
+            "id": 18,
+            "name": "Guinea U20"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 28,
+              "name": "BT Sport Extra 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-21",
+          "home_team": {
+            "id": 74,
+            "name": "Portugal U20"
+          },
+          "id": 86,
+          "time": "17:45:00"
+        },
+        {
+          "away_team": {
+            "id": 54,
+            "name": "Borussia Dortmund"
+          },
+          "channels": [
+            {
+              "id": 9,
+              "name": "BT Sport Europe"
+            },
+            {
+              "id": 27,
+              "name": "BT Sport Europe HD"
+            }
+          ],
+          "competition": {
+            "id": 23,
+            "name": "DFB Pokal\u00a0Final"
+          },
+          "date": "2016-05-21",
+          "home_team": {
+            "id": 61,
+            "name": "Bayern Munich"
+          },
+          "id": 77,
+          "time": "19:00:00"
+        },
+        {
+          "away_team": {
+            "id": 33,
+            "name": "Juventus"
+          },
+          "channels": [
+            {
+              "id": 13,
+              "name": "Sky Sports 2"
+            },
+            {
+              "id": 16,
+              "name": "Sky Sports 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 8,
+            "name": "Coppa Italia\u00a0Final"
+          },
+          "date": "2016-05-21",
+          "home_team": {
+            "id": 32,
+            "name": "AC Milan"
+          },
+          "id": 34,
+          "time": "19:45:00"
+        },
+        {
+          "away_team": {
+            "id": 30,
+            "name": "New York Red Bulls"
+          },
+          "channels": [
+            {
+              "id": 14,
+              "name": "Sky Sports 5"
+            },
+            {
+              "id": 15,
+              "name": "Sky Sports 5 HD"
+            }
+          ],
+          "competition": {
+            "id": 7,
+            "name": "MLS"
+          },
+          "date": "2016-05-21",
+          "home_team": {
+            "id": 29,
+            "name": "New York City FC"
+          },
+          "id": 32,
+          "time": "20:00:00"
+        },
+        {
+          "away_team": {
+            "id": 35,
+            "name": "Houston Dynamo"
+          },
+          "channels": [
+            {
+              "id": 13,
+              "name": "Sky Sports 2"
+            },
+            {
+              "id": 16,
+              "name": "Sky Sports 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 7,
+            "name": "MLS"
+          },
+          "date": "2016-05-21",
+          "home_team": {
+            "id": 34,
+            "name": "Chicago Fire"
+          },
+          "id": 35,
+          "time": "22:00:00"
+        }
+      ]
+    },
+    {
+      "date": "2016-05-22",
+      "matches": [
+        {
+          "away_team": {
+            "id": 27,
+            "name": "Montreal Impact"
+          },
+          "channels": [
+            {
+              "id": 13,
+              "name": "Sky Sports 2"
+            },
+            {
+              "id": 16,
+              "name": "Sky Sports 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 7,
+            "name": "MLS"
+          },
+          "date": "2016-05-22",
+          "home_team": {
+            "id": 31,
+            "name": "Orlando City"
+          },
+          "id": 33,
+          "time": "00:30:00"
+        },
+        {
+          "away_team": {
+            "id": 70,
+            "name": "Morpeth Town"
+          },
+          "channels": [
+            {
+              "id": 9,
+              "name": "BT Sport Europe"
+            },
+            {
+              "id": 26,
+              "name": "BT Sport Ultra HD"
+            },
+            {
+              "id": 27,
+              "name": "BT Sport Europe HD"
+            },
+            {
+              "id": 28,
+              "name": "BT Sport Extra 1"
+            }
+          ],
+          "competition": {
+            "id": 21,
+            "name": "FA Vase\u00a0Final"
+          },
+          "date": "2016-05-22",
+          "home_team": {
+            "id": 69,
+            "name": "Hereford"
+          },
+          "id": 75,
+          "time": "12:15:00"
+        },
+        {
+          "away_team": {
+            "id": 83,
+            "name": "Falkirk"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 26,
+            "name": "Scottish Premiership\u00a0Play-Off Final 2nd Leg"
+          },
+          "date": "2016-05-22",
+          "home_team": {
+            "id": 82,
+            "name": "Kilmarnock"
+          },
+          "id": 83,
+          "time": "15:00:00"
+        },
+        {
+          "away_team": {
+            "id": 78,
+            "name": "Mexico U20"
+          },
+          "channels": [
+            {
+              "id": 7,
+              "name": "BT Sport 2"
+            },
+            {
+              "id": 30,
+              "name": "BT Sport 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-22",
+          "home_team": {
+            "id": 80,
+            "name": "Mali U20"
+          },
+          "id": 89,
+          "time": "15:00:00"
+        },
+        {
+          "away_team": {
+            "id": 72,
+            "name": "Grimsby Town"
+          },
+          "channels": [
+            {
+              "id": 9,
+              "name": "BT Sport Europe"
+            },
+            {
+              "id": 26,
+              "name": "BT Sport Ultra HD"
+            },
+            {
+              "id": 27,
+              "name": "BT Sport Europe HD"
+            },
+            {
+              "id": 28,
+              "name": "BT Sport Extra 1"
+            }
+          ],
+          "competition": {
+            "id": 22,
+            "name": "FA Trophy\u00a0Final"
+          },
+          "date": "2016-05-22",
+          "home_team": {
+            "id": 71,
+            "name": "Halifax Town"
+          },
+          "id": 76,
+          "time": "16:15:00"
+        },
+        {
+          "away_team": {
+            "id": 92,
+            "name": "Turkey"
+          },
+          "channels": [
+            {
+              "id": 1,
+              "name": "ITV"
+            },
+            {
+              "id": 34,
+              "name": "ITV HD"
+            }
+          ],
+          "competition": {
+            "id": 5,
+            "name": "International Friendly"
+          },
+          "date": "2016-05-22",
+          "home_team": {
+            "id": 1,
+            "name": "England"
+          },
+          "id": 123,
+          "time": "17:15:00"
+        },
+        {
+          "away_team": {
+            "id": 77,
+            "name": "Bulgaria U20"
+          },
+          "channels": [
+            {
+              "id": 7,
+              "name": "BT Sport 2"
+            },
+            {
+              "id": 30,
+              "name": "BT Sport 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-22",
+          "home_team": {
+            "id": 81,
+            "name": "Czech Republic U20"
+          },
+          "id": 90,
+          "time": "17:30:00"
+        },
+        {
+          "away_team": {
+            "id": 46,
+            "name": "Sevilla"
+          },
+          "channels": [
+            {
+              "id": 11,
+              "name": "Sky Sports 1"
+            },
+            {
+              "id": 20,
+              "name": "Sky Sports 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 11,
+            "name": "Copa del Rey\u00a0Final"
+          },
+          "date": "2016-05-22",
+          "home_team": {
+            "id": 23,
+            "name": "Barcelona"
+          },
+          "id": 26,
+          "time": "20:30:00"
+        },
+        {
+          "away_team": {
+            "id": 37,
+            "name": "Vancouver Whitecaps"
+          },
+          "channels": [
+            {
+              "id": 12,
+              "name": "Sky Sports 3"
+            },
+            {
+              "id": 17,
+              "name": "Sky Sports 3 HD"
+            }
+          ],
+          "competition": {
+            "id": 7,
+            "name": "MLS"
+          },
+          "date": "2016-05-22",
+          "home_team": {
+            "id": 40,
+            "name": "Portland Timbers"
+          },
+          "id": 41,
+          "time": "21:30:00"
+        }
+      ]
+    },
+    {
+      "date": "2016-05-23",
+      "matches": [
+        {
+          "away_team": {
+            "id": 41,
+            "name": "San Jose Earthquakes"
+          },
+          "channels": [
+            {
+              "id": 11,
+              "name": "Sky Sports 1"
+            },
+            {
+              "id": 20,
+              "name": "Sky Sports 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 7,
+            "name": "MLS"
+          },
+          "date": "2016-05-23",
+          "home_team": {
+            "id": 24,
+            "name": "LA Galaxy"
+          },
+          "id": 27,
+          "time": "00:00:00"
+        },
+        {
+          "away_team": {
+            "id": 74,
+            "name": "Portugal U20"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-23",
+          "home_team": {
+            "id": 19,
+            "name": "Japan U20"
+          },
+          "id": 20,
+          "time": "16:15:00"
+        },
+        {
+          "away_team": {
+            "id": 18,
+            "name": "Guinea U20"
+          },
+          "channels": [
+            {
+              "id": 7,
+              "name": "BT Sport 2"
+            },
+            {
+              "id": 30,
+              "name": "BT Sport 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-23",
+          "home_team": {
+            "id": 17,
+            "name": "England U20"
+          },
+          "id": 18,
+          "time": "18:45:00"
+        },
+        {
+          "away_team": {
+            "id": 21,
+            "name": "Eintracht Frankfurt"
+          },
+          "channels": [
+            {
+              "id": 9,
+              "name": "BT Sport Europe"
+            },
+            {
+              "id": 27,
+              "name": "BT Sport Europe HD"
+            }
+          ],
+          "competition": {
+            "id": 6,
+            "name": "Bundesliga\u00a0Relegation Play-Off 2nd Leg"
+          },
+          "date": "2016-05-23",
+          "home_team": {
+            "id": 20,
+            "name": "FC Nuremberg"
+          },
+          "id": 22,
+          "time": "19:30:00"
+        }
+      ]
+    },
+    {
+      "date": "2016-05-24",
+      "matches": [
+        {
+          "away_team": {
+            "id": 78,
+            "name": "Mexico U20"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-24",
+          "home_team": {
+            "id": 77,
+            "name": "Bulgaria U20"
+          },
+          "id": 79,
+          "time": "16:00:00"
+        },
+        {
+          "away_team": {
+            "id": 80,
+            "name": "Mali U20"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-24",
+          "home_team": {
+            "id": 79,
+            "name": "France U20"
+          },
+          "id": 80,
+          "time": "18:30:00"
+        }
+      ]
+    },
+    {
+      "date": "2016-05-25",
+      "matches": [
+        {
+          "away_team": {
+            "id": 19,
+            "name": "Japan U20"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-25",
+          "home_team": {
+            "id": 18,
+            "name": "Guinea U20"
+          },
+          "id": 19,
+          "time": "16:15:00"
+        },
+        {
+          "away_team": {
+            "id": 17,
+            "name": "England U20"
+          },
+          "channels": [
+            {
+              "id": 7,
+              "name": "BT Sport 2"
+            },
+            {
+              "id": 30,
+              "name": "BT Sport 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-25",
+          "home_team": {
+            "id": 73,
+            "name": "Paraguay U20"
+          },
+          "id": 88,
+          "time": "18:45:00"
+        },
+        {
+          "away_team": {
+            "id": 68,
+            "name": "Grasshoppers Zurich"
+          },
+          "channels": [
+            {
+              "id": 9,
+              "name": "BT Sport Europe"
+            },
+            {
+              "id": 27,
+              "name": "BT Sport Europe HD"
+            }
+          ],
+          "competition": {
+            "id": 20,
+            "name": "Swiss Super League"
+          },
+          "date": "2016-05-25",
+          "home_team": {
+            "id": 67,
+            "name": "FC Basel"
+          },
+          "id": 74,
+          "time": "19:30:00"
+        },
+        {
+          "away_team": {
+            "id": 76,
+            "name": "Sunderland AFC Ladies"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 25,
+            "name": "FA Women's Super League"
+          },
+          "date": "2016-05-25",
+          "home_team": {
+            "id": 75,
+            "name": "Chelsea Ladies"
+          },
+          "id": 78,
+          "time": "19:45:00"
+        }
+      ]
+    },
+    {
+      "date": "2016-05-26",
+      "matches": [
+        {
+          "away_team": {
+            "id": 77,
+            "name": "Bulgaria U20"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-26",
+          "home_team": {
+            "id": 80,
+            "name": "Mali U20"
+          },
+          "id": 84,
+          "time": "16:00:00"
+        },
+        {
+          "away_team": {
+            "id": 81,
+            "name": "Czech Republic U20"
+          },
+          "channels": [
+            {
+              "id": 8,
+              "name": "BT Sport 1"
+            },
+            {
+              "id": 29,
+              "name": "BT Sport 1 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-26",
+          "home_team": {
+            "id": 79,
+            "name": "France U20"
+          },
+          "id": 85,
+          "time": "18:30:00"
+        }
+      ]
+    },
+    {
+      "date": "2016-05-27",
+      "matches": [
+        {
+          "away_team": {
+            "id": 17,
+            "name": "England U20"
+          },
+          "channels": [
+            {
+              "id": 7,
+              "name": "BT Sport 2"
+            },
+            {
+              "id": 30,
+              "name": "BT Sport 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-27",
+          "home_team": {
+            "id": 19,
+            "name": "Japan U20"
+          },
+          "id": 91,
+          "time": "16:15:00"
+        },
+        {
+          "away_team": {
+            "id": 73,
+            "name": "Paraguay U20"
+          },
+          "channels": [
+            {
+              "id": 7,
+              "name": "BT Sport 2"
+            },
+            {
+              "id": 30,
+              "name": "BT Sport 2 HD"
+            }
+          ],
+          "competition": {
+            "id": 24,
+            "name": "Toulon Tournament\u00a0Group Stage"
+          },
+          "date": "2016-05-27",
+          "home_team": {
+            "id": 74,
+            "name": "Portugal U20"
+          },
+          "id": 92,
+          "time": "18:45:00"
+        },
+        {
+          "away_team": {
+            "id": 16,
+            "name": "Belarus"
+          },
+          "channels": [
+            {
+              "id": 6,
+              "name": "BBC Two NI"
+            }
+          ],
+          "competition": {
+            "id": 5,
+            "name": "International Friendly"
+          },
+          "date": "2016-05-27",
+          "home_team": {
+            "id": 15,
+            "name": "Northern Ireland"
+          },
+          "id": 16,
+          "time": "19:45:00"
+        },
+        {
+          "away_team": {
+            "id": 95,
+            "name": "Netherlands"
+          },
+          "channels": [
+            {
+              "id": 4,
+              "name": "Premier Sports"
+            },
+            {
+              "id": 31,
+              "name": "Premier Sports HD"
+            }
+          ],
+          "competition": {
+            "id": 5,
+            "name": "International Friendly"
+          },
+          "date": "2016-05-27",
+          "home_team": {
+            "id": 93,
+            "name": "Republic of Ireland"
+          },
+          "id": 99,
+          "time": "19:45:00"
+        },
+        {
+          "away_team": {
+            "id": 103,
+            "name": "Australia"
+          },
+          "channels": [
+            {
+              "id": 1,
+              "name": "ITV"
+            },
+            {
+              "id": 34,
+              "name": "ITV HD"
+            }
+          ],
+          "competition": {
+            "id": 5,
+            "name": "International Friendly"
+          },
+          "date": "2016-05-27",
+          "home_team": {
+            "id": 1,
+            "name": "England"
+          },
+          "id": 124,
+          "time": "19:45:00"
+        }
+      ]
+    }
+  ]
+}

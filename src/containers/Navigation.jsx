@@ -1,12 +1,11 @@
 import React from 'react';
 
+import IconButton from 'material-ui/IconButton';
+import ActionSearch from 'material-ui/svg-icons/action/search';
+
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 
-
-function fancy() {
-  console.log('I \'m fancy bro');
-}
 
 export default class Navigation extends React.Component {
   constructor(props) {
@@ -14,11 +13,9 @@ export default class Navigation extends React.Component {
     this.state = {
       open: false
     };
-    this._toggle = this._toggle.bind(this);
   }
 
-  _toggle(e) {
-    e.preventDefault();
+  _toggle = () => {
     this.setState({open: !this.state.open});
   }
 
@@ -28,12 +25,11 @@ export default class Navigation extends React.Component {
         <AppBar
           title="TV Football"
           onLeftIconButtonTouchTap={this._toggle}
-          />
-        <Drawer 
+          iconElementRight={<IconButton><ActionSearch /></IconButton>} />
+        <Drawer
           docked={false}
           open={this.state.open}
-          onRequestChange={open => this.setState({open})}
-          />
+          onRequestChange={open => this.setState({open})} />
       </div>
     );
   }

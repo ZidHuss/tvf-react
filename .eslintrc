@@ -1,4 +1,5 @@
 {
+    "parser": "babel-eslint",
     "env": {
         "es6": true,
         "browser": true,
@@ -11,7 +12,8 @@
             "ecmaVersion": 6,
             "sourceType": "module",
             "ecmaFeatures": {
-                "jsx": true
+                "jsx": true,
+                "experimentalObjectRestSpread": true
             }
     },
     "rules": {
@@ -50,7 +52,7 @@
        "max-len": 1,
        "indent": [2, 2, {"SwitchCase": 1}],
        "arrow-parens": [2, "as-needed"],
-       "no-trailing-spaces": 2,
-       "experimentalObjectRestSpread": true
-    }
+       "no-trailing-spaces": 2
+    },
+    "extends": "plugin:react/recommended"
 }

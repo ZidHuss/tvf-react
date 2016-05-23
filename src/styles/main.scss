@@ -1,6 +1,58 @@
 @import 'reset-css/reset.css';
+@import 'material-design-lite/material.css';
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: rgba(0, 0, 0, .87);
+  background-color: #EEE;
+
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    display: block;
+  }
+
+  .about, .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+
+    .paper {
+      width: 100%;
+      min-height: 5em;
+      padding: 1em;
+      margin-bottom: 16px;
+    }
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+    // justify-content: space-around;
+
+    .home-team, .away-team {
+      width: 40%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5em;
+    }
+    .time {
+      width: 20%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6em;
+      padding: .5em;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+  }
 }

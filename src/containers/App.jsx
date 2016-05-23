@@ -1,9 +1,12 @@
 import React from 'react';
 
-import Navigation from '../layouts/Navigation';
+import Navigation from '../containers/Navigation';
 
 
 export default class App extends React.Component {
+  static propTypes = {
+    children: React.PropTypes.node
+  }
   render() {
     return (
       <section>
@@ -12,6 +15,6 @@ export default class App extends React.Component {
           {this.props.children}
         </section>
       </section>
-    )
+    );
   }
 }
