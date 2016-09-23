@@ -28,7 +28,6 @@
        "no-param-reassign": 2,
        "prefer-arrow-callback": 2,
        "arrow-spacing": 2,
-       "arrow-body-style": 2,
        "no-useless-constructor": 2,
        "no-iterator": 2,
        "dot-notation": 2,

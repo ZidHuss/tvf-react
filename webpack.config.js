@@ -10,7 +10,10 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 });
 
 module.exports = {
-  devTool: 'source-map',
+  devtool: 'source-map',
+  devServer: {
+    historyApiFallback: true
+  },
   entry: './src/index.jsx',
   resolve: {
     extensions: ['', '.js', '.jsx']

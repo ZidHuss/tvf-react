@@ -1,19 +1,34 @@
 import React from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 import Paper from 'material-ui/Paper';
 
-export default class Match extends React.Component {
+import * as matchSelectActions from '../ducks/match-select';
+
+class Match extends React.Component {
   static propTypes = {
-    match: React.PropTypes.object.isRequired
+    match: React.PropTypes.object.isRequired,
   }
 
-  // Faster way to access home and away team objects
-  homeTeam = this.props.match.home_team;
-  awayTeam = this.props.match.away_team;
+  constructor(props) {
+    super(props);
+    // Faster way to access home and away team objects
+    this.homeTeam = this.props.match.home_team;
+    this.awayTeam = this.props.match.away_team;
+    this.state = {
+      selected: false,
+      zDepth: 1
+    };
+  }
 
   render() {
     return (
-      <Paper className="paper" zDepth={1}>
+      <Paper
+        className={`paper ${this.props.chosen ? 'chosen' : ''}`}
+        zDepth={this.props.chosen ? 2 : 1}
+        onClick={() => this.props.actions.chooseMatch(this.props.match.id)}
+      >
         <section className="row">
           <section className="home-team">{this.homeTeam.name}</section>
           <section className="time">
@@ -21,10 +36,25 @@ export default class Match extends React.Component {
           </section>
           <section className="away-team">{this.awayTeam.name}</section>
         </section>
-        <section className="row">
+        { this.props.chosen &&
+        <section className="row extra-info">
+          <span className="competition">{this.props.match.competition.name}</span>
+          {this.props.match.channels.map(channel => {
+          return (<span key={channel.id} className="channel">{channel.name}</span>);
+          })}
         </section>
+        }
       </Paper>
     );
   }
 }
 
+// const mapStateToProps = state => {}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    actions: bindActionCreators(matchSelectActions, dispatch)
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Match);

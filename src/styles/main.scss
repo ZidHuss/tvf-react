@@ -2,6 +2,8 @@
 @import 'material-design-lite/material.css';
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
+@custom-media --large screen and (min-width: 45em);
+
 body {
   font-family: 'Roboto', sans-serif;
   color: rgba(0, 0, 0, .87);
@@ -13,6 +15,23 @@ body {
 
   h4 {
     display: block;
+  }
+
+  .match-day {
+    width: 100%;
+    max-width: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (--large) {
+      width:
+    }
+
+    .day-name {
+      width: 100%;
+    }
   }
 
   .about, .main {
@@ -30,10 +49,14 @@ body {
     }
   }
 
+  .chosen {
+    height: 15em;
+    width: 105% !important;
+  }
+
   .row {
     display: flex;
     width: 100%;
-    // justify-content: space-around;
 
     .home-team, .away-team {
       width: 40%;
@@ -53,6 +76,17 @@ body {
       padding: .5em;
       background-color: #f0f0f0;
       border-radius: 5px;
+    }
+  }
+
+  .extra-info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    .competition {
+      font-size: 0.8rem;
     }
   }
 }
