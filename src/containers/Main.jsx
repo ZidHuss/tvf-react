@@ -44,7 +44,7 @@ class Main extends React.Component {
       <section className="main">
         {this.state.days.map(day => {
           return (
-            <section className="match-day">
+            <section className="match-day" key={day.date}>
               <h5 className="day-name">{this.dayNames(day.date)}</h5>
               {day.matches.map(match => {
               return (
