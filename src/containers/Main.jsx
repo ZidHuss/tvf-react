@@ -28,7 +28,8 @@ class Main extends React.Component {
   render() {
     return (
       <section className="main">
-        {this.props.matches ? this.props.matches.map(day => {
+        {this.props.isFetching && <CircularProgress />}
+        {this.props.matches && this.props.matches.map(day => {
           return (
             <section className="match-day" key={day.date}>
               <h5 className="day-name">{this.dayNames(day.date)}</h5>
@@ -42,7 +43,7 @@ class Main extends React.Component {
               }, this)}
             </section>
           );
-          }, this) : <CircularProgress />}
+          }, this)}
       </section>
     );
   }
@@ -51,7 +52,8 @@ class Main extends React.Component {
 const mapStateToProps = store => {
   return {
     chosen: store.matchSelect.chosen,
-    matches: store.matchFetch.matches
+    matches: store.matchFetch.matches,
+    isFetching: store.matchFetch.isFetching
   };
 };
 

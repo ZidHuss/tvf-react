@@ -14,7 +14,7 @@ export default class About extends React.Component {
               href="https://facebook.github.io/react/">React</a>.
           </p>
           <p>
-            The source for this file can be found on <a
+            The source for this project can be found on <a
               href="https://github.com/zidhuss/tvf-react">Github</a>.
           </p>
         </Paper>
