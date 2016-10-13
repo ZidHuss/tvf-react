@@ -1,32 +1,14 @@
 import React from 'react';
-import axios from 'axios';
 import moment from 'moment';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
-import { chooseMatch } from '../ducks/match-select';
+import CircularProgress from 'material-ui/CircularProgress';
+
 import Match from '../components/Match';
-
+import * as matchFetchActions from '../ducks/match-fetch';
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      days: []
-    };
-  }
-  componentWillMount = () => {
-    axios.get('http://tvfootball.zidhuss.tech/api/matches', {
-      params: {
-        start: moment().format('YYYY-MM-DD'),
-        end: moment().add(7, 'days').format('YYYY-MM-DD')
-      }
-    })
-    .then(response => {
-      this.setState({
-        days: response.data.data
-      });
-    });
-  }
 
   dayNames = date => {
     const d = moment(date, 'YYYY-MM-DD');
@@ -39,10 +21,14 @@ class Main extends React.Component {
     }
   }
 
+  componentWillMount = () => {
+    this.props.actions.fetchMatches();
+  }
+
   render() {
     return (
       <section className="main">
-        {this.state.days.map(day => {
+        {this.props.matches ? this.props.matches.map(day => {
           return (
             <section className="match-day" key={day.date}>
               <h5 className="day-name">{this.dayNames(day.date)}</h5>
@@ -56,7 +42,7 @@ class Main extends React.Component {
               }, this)}
             </section>
           );
-        }, this)}
+          }, this) : <CircularProgress />}
       </section>
     );
   }
@@ -64,8 +50,15 @@ class Main extends React.Component {
 
 const mapStateToProps = store => {
   return {
-    chosen: store.matchSelect.chosen
+    chosen: store.matchSelect.chosen,
+    matches: store.matchFetch.matches
   };
 };
 
-export default connect(mapStateToProps)(Main);
+const mapDispatchToProps = dispatch => {
+  return {
+    actions: bindActionCreators(matchFetchActions, dispatch)
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Main);
