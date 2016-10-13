@@ -17,6 +17,10 @@ body {
     display: block;
   }
 
+  .navDrawer {
+    padding-top: 5em;
+  }
+
   .match-day {
     width: 100%;
     max-width: 50em;
@@ -46,6 +50,10 @@ body {
       min-height: 5em;
       padding: 1em;
       margin-bottom: 16px;
+    }
+
+    .about-paper {
+      padding: 2em;
     }
   }
 

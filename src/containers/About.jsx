@@ -3,28 +3,20 @@ import React from 'react';
 import Paper from 'material-ui/Paper';
 
 export default class About extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      zDepth: 1
-    };
-  }
-
-  bringForward = () => {
-    if (this.state.zDepth === 5) {
-      this.setState({zDepth: 1});
-    } else {
-      this.setState({zDepth: ++this.state.zDepth});
-    }
-  }
   render() {
     return (
       <section className="about">
-        <Paper
-          className="paper"
-          zDepth={this.state.zDepth}
-          onClick={this.bringForward}>
-          <h2 className="display-3">Huss</h2>
+        <Paper className="paper about-paper">
+          <h4>About</h4>
+          <p>
+            This website displays information on football matches
+            broadcasted in the UK. Created with <a
+              href="https://facebook.github.io/react/">React</a>.
+          </p>
+          <p>
+            The source for this file can be found on <a
+              href="https://github.com/zidhuss/tvf-react">Github</a>.
+          </p>
         </Paper>
       </section>
     );

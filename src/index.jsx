@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
 
@@ -27,7 +27,7 @@ const theme = getMuiTheme({
 const routes = (
   <Provider store={store}>
     <MuiThemeProvider muiTheme={theme}>
-      <Router history={browserHistory}>
+      <Router history={hashHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={Main} />
           <Route path="/about" component={About} />
