@@ -22,7 +22,7 @@ class Main extends React.Component {
   }
 
   componentWillMount = () => {
-    this.props.actions.fetchMatches();
+    !this.props.matches && this.props.actions.fetchMatches();
   }
 
   render() {
