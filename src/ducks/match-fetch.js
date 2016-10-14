@@ -42,7 +42,7 @@ export function fetchSuccess(matches) {
 export function fetchMatches() {
   return dispatch => {
     dispatch(fetchInit());
-    return axios.get('http://tvfootball.zidhuss.tech/api/matches', {
+    return axios.get('https://tvfootball.zidhuss.tech/api/matches', {
       params: {
         start: moment().format('YYYY-MM-DD'),
         end: moment().add(7, 'days').format('YYYY-MM-DD')
