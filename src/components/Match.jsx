@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton';
 import ActionEvent from 'material-ui/svg-icons/action/event';
+import Snackbar from 'material-ui/Snackbar'
 
 import * as matchSelectActions from '../ducks/match-select';
 
@@ -21,7 +22,8 @@ class Match extends React.Component {
     this.awayTeam = this.props.match.away_team;
     this.state = {
       selected: false,
-      zDepth: 1
+      zDepth: 1,
+      added: false
     };
   }
 
@@ -48,10 +50,14 @@ class Match extends React.Component {
     return event;
   };
 
+  handleRequestClose = () => {
+    this.setState({...this.state, added: false})
+  }
+
   addToCalender = () => {
     const CLIENT_ID = '768720964204-48u037qgfqlfleek3md9skltbce4n7lf.apps.googleusercontent.com';
     const SCOPES = 'https://www.googleapis.com/auth/calendar';
-    const eventWindow = window.open('', '_blank');
+    const self = this;
     gapi.load('client:auth2', () => {
       gapi.auth2.init({ client_id: CLIENT_ID, scope: SCOPES }).then(() => {
         const auth2 = gapi.auth2.getAuthInstance();
@@ -62,7 +68,9 @@ class Match extends React.Component {
             'calendarId': 'primary',
             'resource': this.createMatchEvent(this.props.match)
           });
-          request.execute(event => eventWindow.location.href = event.htmlLink);
+          request.execute(event => {
+            self.setState({...self.state, added: true})
+          });
         });
       });
     });
@@ -75,6 +83,12 @@ class Match extends React.Component {
         zDepth={this.props.chosen ? 2 : 1}
         onClick={() => this.props.actions.chooseMatch(this.props.match.id)}
       >
+        <Snackbar
+          open={this.state.added}
+          message="Event added to your calendar"
+          autoHideDuration={2000}
+          onRequestClose={this.handleRequestClose}
+        />
         <section className="row">
           <section className="home-team">{this.homeTeam.name}</section>
           <section className="time">
@@ -95,7 +109,6 @@ class Match extends React.Component {
               label="Add to Calendar"
               labelPosition="before"
               onClick={() => this.addToCalender()}
-              disabled={true}
               primary={true}
               icon={<ActionEvent />}
             />
