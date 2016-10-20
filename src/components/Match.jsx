@@ -1,14 +1,14 @@
-import React from 'react';
-import moment from 'moment';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import React from 'react'
+import moment from 'moment'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import Paper from 'material-ui/Paper';
-import RaisedButton from 'material-ui/RaisedButton';
-import ActionEvent from 'material-ui/svg-icons/action/event';
+import Paper from 'material-ui/Paper'
+import RaisedButton from 'material-ui/RaisedButton'
+import ActionEvent from 'material-ui/svg-icons/action/event'
 import Snackbar from 'material-ui/Snackbar'
 
-import * as matchSelectActions from '../ducks/match-select';
+import * as matchSelectActions from '../ducks/match-select'
 
 class Match extends React.Component {
   static propTypes = {
@@ -16,20 +16,20 @@ class Match extends React.Component {
   }
 
   constructor(props) {
-    super(props);
+    super(props)
     // Faster way to access home and away team objects
-    this.homeTeam = this.props.match.home_team;
-    this.awayTeam = this.props.match.away_team;
+    this.homeTeam = this.props.match.home_team
+    this.awayTeam = this.props.match.away_team
     this.state = {
       selected: false,
       zDepth: 1,
       added: false
-    };
+    }
   }
 
   createMatchEvent = match => {
-    const channels = [];
-    match.channels.forEach(channel => channels.push(channel.name));
+    const channels = []
+    match.channels.forEach(channel => channels.push(channel.name))
     const event = {
       'summary': `${match.home_team.name} vs ${match.away_team.name}`,
       'description': `${match.competition.name} on ${channels.join(', ')}`,
@@ -46,34 +46,34 @@ class Match extends React.Component {
           {'method': 'popup', 'minutes': 15}
         ]
       }
-    };
-    return event;
-  };
+    }
+    return event
+  }
 
   handleRequestClose = () => {
     this.setState({...this.state, added: false})
   }
 
   addToCalender = () => {
-    const CLIENT_ID = '768720964204-48u037qgfqlfleek3md9skltbce4n7lf.apps.googleusercontent.com';
-    const SCOPES = 'https://www.googleapis.com/auth/calendar';
-    const self = this;
+    const CLIENT_ID = '768720964204-48u037qgfqlfleek3md9skltbce4n7lf.apps.googleusercontent.com'
+    const SCOPES = 'https://www.googleapis.com/auth/calendar'
+    const self = this
     gapi.load('client:auth2', () => {
       gapi.auth2.init({ client_id: CLIENT_ID, scope: SCOPES }).then(() => {
-        const auth2 = gapi.auth2.getAuthInstance();
+        const auth2 = gapi.auth2.getAuthInstance()
         if (!auth2.isSignedIn.get())
-          auth2.signIn();
+          auth2.signIn()
         gapi.client.load('calendar', 'v3', () => {
           const request = gapi.client.calendar.events.insert({
             'calendarId': 'primary',
             'resource': this.createMatchEvent(this.props.match)
-          });
+          })
           request.execute(event => {
             self.setState({...self.state, added: true})
-          });
-        });
-      });
-    });
+          })
+        })
+      })
+    })
   }
 
   render() {
@@ -101,7 +101,7 @@ class Match extends React.Component {
           <section className="row extra-info">
             <span className="competition">{this.props.match.competition.name}</span>
             {this.props.match.channels.map(channel => {
-            return (<span key={channel.id} className="channel">{channel.name}</span>);
+            return (<span key={channel.id} className="channel">{channel.name}</span>)
             })}
           </section>
           <section className="row action">
@@ -116,7 +116,7 @@ class Match extends React.Component {
             </section>
         }
       </Paper>
-      );
+      )
       }
       }
 
@@ -124,7 +124,7 @@ class Match extends React.Component {
       const mapDispatchToProps = dispatch => {
       return {
       actions: bindActionCreators(matchSelectActions, dispatch)
-      };
-      };
+      }
+      }
 
-      export default connect(null, mapDispatchToProps)(Match);
+      export default connect(null, mapDispatchToProps)(Match)

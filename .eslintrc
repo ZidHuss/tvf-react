@@ -45,7 +45,7 @@
        "array-bracket-spacing": [2, "never"],
        "no-unneeded-ternary": 2,
        "brace-style": 2,
-       "semi": 2,
+       "semi": [2, "never"],
        "camelcase": 2,
        "new-cap": 2,
        "max-len": 1,

@@ -1,28 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import { Provider } from 'react-redux';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Provider } from 'react-redux'
 
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { teal500 } from 'material-ui/styles/colors';
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import { green500 } from 'material-ui/styles/colors'
 
-import App from './containers/App';
-import Main from './containers/Main';
-import About from './containers/About';
-import store from './ducks/store';
-import './styles/main.scss';
+import App from './containers/App'
+import Main from './containers/Main'
+import About from './containers/About'
+import store from './ducks/store'
+import './styles/main.scss'
 
-injectTapEventPlugin();
+injectTapEventPlugin()
 
 // App Theme
 const theme = getMuiTheme({
   palette: {
-    primary1Color: teal500
+    primary1Color: green500
   }
-});
+})
 
 const routes = (
   <Provider store={store}>
@@ -35,6 +35,6 @@ const routes = (
       </Router>
     </MuiThemeProvider>
   </Provider>
-);
+)
 
-ReactDOM.render(routes, document.getElementById('main'));
+ReactDOM.render(routes, document.getElementById('main'))

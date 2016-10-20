@@ -1,4 +1,4 @@
-const SELECT = 'match-select/MATCH_SELECT';
+const SELECT = 'match-select/MATCH_SELECT'
 
 export default function reducer(state = {}, action) {
   switch (action.type) {
@@ -6,10 +6,10 @@ export default function reducer(state = {}, action) {
       return {
         ...state,
         chosen: action.matchId
-      };
-      break;
+      }
+      break
     default:
-      return state;
+      return state
   }
 }
 
@@ -17,5 +17,5 @@ export function chooseMatch(matchId) {
   return {
     type: SELECT,
     matchId
-  };
+  }
 }

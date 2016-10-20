@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import Navigation from '../containers/Navigation';
+import Navigation from '../containers/Navigation'
 
 
 export default class App extends React.Component {
@@ -15,6 +15,6 @@ export default class App extends React.Component {
           {this.props.children}
         </section>
       </section>
-    );
+    )
   }
 }

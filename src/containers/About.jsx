@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import Paper from 'material-ui/Paper';
+import Paper from 'material-ui/Paper'
 
 export default class About extends React.Component {
   render() {
@@ -19,6 +19,6 @@ export default class About extends React.Component {
           </p>
         </Paper>
       </section>
-    );
+    )
   }
 }
