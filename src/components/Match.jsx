@@ -9,6 +9,7 @@ import ActionEvent from 'material-ui/svg-icons/action/event'
 import Snackbar from 'material-ui/Snackbar'
 
 import * as matchSelectActions from '../ducks/match-select'
+import * as gapiAuthActions from '../ducks/gapi-auth'
 
 class Match extends React.Component {
   static propTypes = {
@@ -69,7 +70,7 @@ class Match extends React.Component {
             'resource': this.createMatchEvent(this.props.match)
           })
           request.execute(event => {
-            self.setState({...self.state, added: true})
+            self.props.gapiAuth && self.setState({...self.state, added: true})
           })
         })
       })
@@ -81,7 +82,7 @@ class Match extends React.Component {
       <Paper
         className={`paper ${this.props.chosen ? 'chosen' : ''}`}
         zDepth={this.props.chosen ? 2 : 1}
-        onClick={() => this.props.actions.chooseMatch(this.props.match.id)}
+        onClick={() => this.props.selectActions.chooseMatch(this.props.match.id)}
       >
         <Snackbar
           open={this.state.added}
@@ -123,8 +124,15 @@ class Match extends React.Component {
 
       const mapDispatchToProps = dispatch => {
       return {
-      actions: bindActionCreators(matchSelectActions, dispatch)
+      selectActions: bindActionCreators(matchSelectActions, dispatch),
+      gapiActions: bindActionCreators(gapiAuthActions, dispatch)
       }
       }
+
+const mapStateToProps = store => {
+  return {
+    gapiAuth: store.gapiAuth.signedIn
+  }
+}
 
       export default connect(null, mapDispatchToProps)(Match)

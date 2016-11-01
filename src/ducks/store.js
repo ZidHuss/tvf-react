@@ -2,10 +2,12 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import matchSelectReducer from './match-select'
 import matchFetchReducer from './match-fetch'
+import gapiAuthReducer from './gapi-auth'
 
 const rootReducer = combineReducers({
   matchSelect: matchSelectReducer,
-  matchFetch: matchFetchReducer
+  matchFetch: matchFetchReducer,
+  gapiAuth: gapiAuthReducer
 })
 
 const initialState = {
@@ -14,6 +16,9 @@ const initialState = {
   },
   matchFetch: {
     isFetching: false
+  },
+  gapiAuth: {
+    signedIn: false
   }
 }
 
