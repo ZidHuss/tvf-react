@@ -2,18 +2,19 @@ import React from 'react'
 import moment from 'moment'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
-import Paper from 'material-ui/Paper'
-import RaisedButton from 'material-ui/RaisedButton'
-import ActionEvent from 'material-ui/svg-icons/action/event'
-import Snackbar from 'material-ui/Snackbar'
+import Paper from '@material-ui/core/Paper'
+import Button from '@material-ui/core/Button'
+import ActionEvent from '@material-ui/icons/Event'
+import Snackbar from '@material-ui/core/Snackbar'
 
 import * as matchSelectActions from '../ducks/match-select'
 import * as gapiAuthActions from '../ducks/gapi-auth'
 
 class Match extends React.Component {
   static propTypes = {
-    match: React.PropTypes.object.isRequired,
+    match: PropTypes.object.isRequired,
   }
 
   constructor(props) {
@@ -23,7 +24,7 @@ class Match extends React.Component {
     this.awayTeam = this.props.match.away_team
     this.state = {
       selected: false,
-      zDepth: 1,
+      zdepth: 1,
       added: false
     }
   }
@@ -81,7 +82,7 @@ class Match extends React.Component {
     return (
       <Paper
         className={`paper ${this.props.chosen ? 'chosen' : ''}`}
-        zDepth={this.props.chosen ? 2 : 1}
+        zdepth={this.props.chosen ? 2 : 1}
         onClick={() => this.props.selectActions.chooseMatch(this.props.match.id)}
       >
         <Snackbar
@@ -106,15 +107,12 @@ class Match extends React.Component {
             })}
           </section>
           <section className="row action">
-            <RaisedButton
-              label="Add to Calendar"
-              labelPosition="before"
-              onClick={() => this.addToCalender()}
-              primary={true}
-              icon={<ActionEvent />}
-            />
-            </section>
-            </section>
+            <Button variant="contained" color="secondary">
+              Add to calendar
+              <ActionEvent />
+            </Button>
+          </section>
+        </section>
         }
       </Paper>
       )

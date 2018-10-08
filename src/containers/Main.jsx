@@ -3,7 +3,7 @@ import moment from 'moment'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import CircularProgress from 'material-ui/CircularProgress'
+import CircularProgress from '@material-ui/core/CircularProgress'
 
 import Match from '../components/Match'
 import * as matchFetchActions from '../ducks/match-fetch'

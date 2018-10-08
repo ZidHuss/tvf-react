@@ -1,37 +1,38 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+// import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
 
-import injectTapEventPlugin from 'react-tap-event-plugin'
-import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import { green500 } from 'material-ui/styles/colors'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import green from '@material-ui/core/colors/green'
 
 import App from './containers/App'
-import Main from './containers/Main'
-import About from './containers/About'
 import store from './ducks/store'
 import './styles/main.scss'
 
-injectTapEventPlugin()
 
 // App Theme
-const theme = getMuiTheme({
+const theme = createMuiTheme({
   palette: {
-    primary1Color: green500
-  }
+    primary1Color: green['500']
+  },
+  typography: {
+    useNextVariants: true,
+  },
 })
 
+
+        // <Route path="/" component={App}>
+        //   <IndexRoute component={Main} />
+        //   <Route path="/about" component={About} />
+        // </Route>
 const routes = (
   <Provider store={store}>
-    <MuiThemeProvider muiTheme={theme}>
-      <Router history={browserHistory}>
-        <Route path="/" component={App}>
-          <IndexRoute component={Main} />
-          <Route path="/about" component={About} />
-        </Route>
+    <MuiThemeProvider theme={theme}>
+      <Router>
+        <Route path="/" component={App} />
       </Router>
     </MuiThemeProvider>
   </Provider>

@@ -1,51 +1,63 @@
-const autoprefixer = require('autoprefixer');
-const precss = require('precss');
-const atImport = require('postcss-import');
-
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-  template: `${__dirname}/src/index.html`,
-  filename: 'index.html',
-  inject: 'body'
-});
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  entry: `${__dirname}/src/index.jsx`,
+
+  mode: 'development',
+
   devtool: 'source-map',
-  devServer: {
-    historyApiFallback: true
-  },
-  entry: './src/index.jsx',
+
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    modules: [
+      `${__dirname}/src`,
+      'node_modules',
+    ]
   },
+
   output: {
     filename: 'bundle.js',
-    path: `${__dirname}/build`
+    path: `${__dirname}/build`,
   },
+
+  devServer: {
+    host: '0.0.0.0',
+    historyApiFallback: true,
+  },
+
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
-        loaders: ['react-hot', 'babel-loader'],
-        exclude: /node_modules/
-      },
-      {
-        test: /\.json$/,
-        loader: 'json'
+        exclude: /node_modules/,
+        use: [
+          { loader: 'babel-loader' },
+        ],
       },
       {
         test: /\.s?css$/,
-        loaders: ['style', 'css', 'postcss'],
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-          'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('postcss-import')(),
+                require('precss')(),
+              ],
+            }
+          },
+        ],
       }
     ]
   },
-  postcss: () => [atImport, autoprefixer, precss],
-  plugins: [HTMLWebpackPluginConfig]
-};
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: `./src/index.html`,
+      inject: 'body'
+    })
+  ]
+}

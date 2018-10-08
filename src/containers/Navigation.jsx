@@ -1,12 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
-import IconButton from 'material-ui/IconButton'
-import ActionSearch from 'material-ui/svg-icons/action/search'
+import IconButton from '@material-ui/core/IconButton'
+import ActionSearch from '@material-ui/icons/Search'
+import MenuIcon from '@material-ui/icons/Menu'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemText from '@material-ui/core/ListItemText'
 
-import AppBar from 'material-ui/AppBar'
-import Drawer from 'material-ui/Drawer'
-import MenuItem from 'material-ui/MenuItem'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Drawer from '@material-ui/core/Drawer'
+import MenuItem from '@material-ui/core/MenuItem'
+import Typography from '@material-ui/core/Typography'
 
 
 export default class Navigation extends React.Component {
@@ -24,25 +29,25 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <AppBar
-          title="TV Football"
-          onLeftIconButtonTouchTap={this._toggle}
-          iconElementRight={<IconButton><ActionSearch /></IconButton>} />
-        <Drawer
-          containerClassName="navDrawer"
-          docked={false}
-          open={this.state.open}
-          onRequestChange={open => this.setState({open})}>
-          <MenuItem
-            primaryText="Matches"
-            containerElement={<Link to={'/'} />}
-            onClick={this._toggle}
-          />
-          <MenuItem
-            primaryText="About"
-            containerElement={<Link to={'/about'} />}
-            onClick={this._toggle}
-          />
+        <AppBar position="static">
+          <Toolbar>
+            <IconButton color="inherit" onClick={this._toggle}>
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" color="inherit" noWrap>
+              TV Football
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <Drawer open={this.state.open} onClose={this._toggle}>
+          <div tabIndex={0} role="button" onClick={this._toggle} onKeyDown={this._toggle}>
+            <ListItem component={Link} to="/" button>
+              <ListItemText primary="Matches" />
+            </ListItem>
+            <ListItem component={Link} to="/about" button>
+              <ListItemText primary="About" />
+            </ListItem>
+          </div>
         </Drawer>
       </div>
     )

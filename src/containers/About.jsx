@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Paper from 'material-ui/Paper'
+import Paper from '@material-ui/core/Paper'
 
 export default class About extends React.Component {
   render() {
